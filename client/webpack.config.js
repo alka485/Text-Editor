@@ -27,16 +27,16 @@ module.exports = () => {
       new MiniCssExtractPlugin(),
       new InjectManifest({
         swSrc: './src/sw.js',
-        swDest: './src/sw.js',
+        swDest: '.src/sw.js',
       }),
 
       new GenerateSW(),
       new WebpackPwaManifest({
-        name: 'TextEditor',
-        short_name: 'TextEditor',
-        description: 'PWA Challenge',
-        background_color: '#7eb4e2',
-        theme_color: '#7eb4e2',
+        name: 'Just Another Text Editor',
+        short_name: 'J.A.T.E',
+        description: 'Takes notes with Javascript syntax highlighting!',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
         start_url: './',
         publicPath: './',
         icons: [
